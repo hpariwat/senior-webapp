@@ -1,0 +1,47 @@
+/* ---------------- HEADER----------------- */
+body {
+	font-family: Raleway, sans-serif;
+	height: 100vh;
+	overflow-x: hidden;
+}
+
+/* Background */
+.brown-bar { background-color: #594D46!important; }
+
+/* Padding left & right */
+.indent{ padding-left: 10vw; padding-right: 10vw; }
+.indentL{ padding-left: 10vw;}
+.indentR{ padding-right: 10vw;}
+/* Phone portrait smaller borders width */
+@media (max-width: 500px) and (orientation: portrait) {
+	.indent { padding-left: 5vw; padding-right: 5vw;}
+	.indentL{ padding-left: 5vw;}
+	.indentR{ padding-right: 5vw;}
+}
+
+/* Button */
+.btnHome
+{
+	border: none;
+	border-radius: 22px;
+	color: white;
+	background-color: Transparent!important;
+	font-size: 22px;
+}
+.btnHome:hover {
+	color: #f1f1f1;
+	background: #70645d !important;
+}
+.iconSize { /* Default size */ }
+
+
+/* RESPONSIVENESS */
+@media (min-width: 720px) and (orientation: portrait) {
+	.btnHome { font-size: 35px;}
+	.iconSize { width: 40px; height: 40px;}
+}
+
+@media (min-width: 900px) and (orientation: landscape) {
+	.btnHome { font-size: 35px;}
+	.iconSize { width: 45px; height: 45px;}
+}

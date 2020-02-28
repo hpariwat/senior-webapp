@@ -1,0 +1,7 @@
+{
+  "name": "a19ux1",
+  "version": "1.0.0",
+  "dependencies": {
+    "shepherd.js": "^6.0.2"
+  }
+}

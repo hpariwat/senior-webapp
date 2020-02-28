@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2274a5"/>
+      <stop offset="1" stop-color="#56b5ee"/>
+    </linearGradient>
+    <filter id="Rectangle_9" x="0" y="0" width="64" height="64" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1331" data-name="Group 1331" transform="translate(-240 -568)">
+    <g transform="matrix(1, 0, 0, 1, 240, 568)" filter="url(#Rectangle_9)">
+      <rect id="Rectangle_9-2" data-name="Rectangle 9" width="46" height="46" rx="23" transform="translate(9 6)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Icon_Microphone" transform="translate(260 585)">
+      <path id="Path_1059" data-name="Path 1059" d="M12,14a2.987,2.987,0,0,0,2.99-3L15,5A3,3,0,0,0,9,5v6A3,3,0,0,0,12,14Zm5.3-3A5.189,5.189,0,0,1,12,16.1,5.189,5.189,0,0,1,6.7,11H5a6.984,6.984,0,0,0,6,6.72V21h2V17.72A6.968,6.968,0,0,0,19,11Z" fill="#fff"/>
+      <path id="Path_1060" data-name="Path 1060" d="M0,0H24V24H0Z" fill="none"/>
+    </g>
+  </g>
+</svg>

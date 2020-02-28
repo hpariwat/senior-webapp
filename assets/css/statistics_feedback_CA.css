@@ -1,0 +1,96 @@
+body {
+	font-family: Raleway, sans-serif;
+	background-image: url("../img/home_CA_bg.svg");
+	background-attachment: fixed;
+}
+
+.dataTables_filter { display: none; }
+
+.table-head {
+	color: #1C344D;
+	display: none;
+}
+
+.search-box {
+	height: 28px;
+	width: auto;
+	border-radius: 9px;
+}
+.card {
+	border-radius: 16px;
+}
+
+.card-body {
+	background-color: #fff;
+}
+.card-header {
+	border-top-left-radius: 16px!important;
+	border-top-right-radius: 16px!important;
+	font-weight: 600;
+	font-size: 18px;
+	background-color: #0288d1;
+	border: none;
+	color: #fff;
+}
+
+tr.shown {
+	background-color: #02a3ef!important;
+	color:#fff!important;
+}
+
+.table-child-row {
+}
+.myProgress {
+	width: 100%;
+	background-color: #f1f1f1;
+	border-radius: 16px;
+}
+
+.myBar {
+	width: 0;
+	height: 22px;
+	background-color: #FBC02D;
+	border-radius: 16px;
+}
+
+.my-modal-body-padding {
+	padding: 15px 40px 20px 40px!important;
+}
+
+.card-body {
+	border-bottom-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+}
+
+
+
+.btn-cancel {
+	border-radius: 16px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2.3px;
+	padding: 10px 20px !important;
+	border: 0;
+	box-shadow: none !important;
+}
+
+.btn-yes {
+	background-color: #0288d1;
+	border-radius: 16px;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2.3px;
+	padding: 10px 20px !important;
+	border: 0;
+	box-shadow: none !important;
+}
+
+.btn-yes:hover {
+	background-color: #02a3ef;
+	border-radius: 16px;
+	color: #fff;
+
+}

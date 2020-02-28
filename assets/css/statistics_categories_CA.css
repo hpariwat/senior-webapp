@@ -1,0 +1,43 @@
+body {
+	font-family: Raleway, sans-serif;
+	background-image: url("../img/home_CA_bg.svg");
+	background-attachment: fixed;
+}
+
+.btn-cancel {
+	border-radius: 16px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2.3px;
+	padding: 10px 20px !important;
+	border: 0;
+	box-shadow: none !important;
+}
+
+.btn-yes {
+	background-color: #0288d1;
+	border-radius: 16px;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2.3px;
+	padding: 10px 20px !important;
+	border: 0;
+	box-shadow: none !important;
+}
+
+.btn-yes:hover {
+	background-color: #02a3ef;
+	border-radius: 16px;
+	color: #fff;
+
+}
+
+.card-header-quicklook {
+	background-color: #0288D1;
+	color: #f1f1f1;
+	font-size: 18px;
+	font-weight: 600;
+}

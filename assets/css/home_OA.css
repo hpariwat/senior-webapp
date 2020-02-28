@@ -1,0 +1,216 @@
+.container-fluid { padding: 0; }
+.noPadding { padding: 0; }
+.bgBeige { background-color: #F1F1F1;}
+
+/* BACKGROUND PICTURE (blurred) */
+.wSection::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	height: 100%;
+
+	background-image: url('../../assets/img/Background_woods.png');
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+	transform: scale(1.1);
+	filter: blur(10px);
+	-webkit-filter: blur(10px);
+	-ms-filter: blur(10px);
+}
+
+/* HELP BUTTON */
+.body { position: relative;}
+.help_button {
+	position: absolute;
+	right: 0;
+	top: 10vh;
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	border: none;
+	cursor:pointer;
+	overflow: hidden;
+	outline:none;
+}
+.help_button:active{ border: none; }
+.help_button > img { width: 40px; height: 40px; }
+
+/*----------- WIDGETS SECTION------------- */
+/* NEWS WIDGET */
+.uw-w-branding { display: none !important;}
+.uw-w-header { display: none !important; }
+.uw-sc-mask {
+	width: 500px;
+	height: auto;
+	margin: 0 !important;
+	padding: 0px;
+	background-color: #E9E9E9;
+	border: 1px solid #4A6163;
+	display: flex;
+	align-items: center !important;
+}
+.uwcard2 { padding: 10px; }
+.uw-card2-row {
+	height: auto;
+	background-color: white;
+	padding: 10px;
+}
+#fg-widget-cc6f69825f11fb090db308910, #fg-widget-a90c5285902e816dda7a6daba {
+	border-radius: 22px;
+	width: auto !important;
+}
+
+/* WEATHER WIDGET */
+.jsx-2519291443 > a { display: none !important;}
+.eaw-weather-info { border-radius: 22px !important;}
+.eaw-root-layout-component {
+	padding: 20px;
+	background-color: #E9E9E9;
+	border-radius: 22px;
+	border: 1px solid #4A6163;
+	display: flex;
+	align-items: center;
+}
+
+/*---------- LOGOUT CONFIRMATION (buttons)------------ */
+.btn-cancel {
+	border-radius: 16px;
+	/*padding: 12px;*/
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2.3px;
+	padding: 10px 20px !important;
+	border: 0;
+	box-shadow: none !important;
+}
+
+/*----------MENU SECTION (buttons)------------ */
+.btnOA {
+	background-color: #2274A5;
+	display:inline-block;
+	border-radius: 22px;
+	width: 180px;
+	height: 180px;
+	border: none;
+}
+.btnOA:hover { background-color: #1C344D;}
+
+.svgSize {
+	width: 80px;
+	height: 80px;
+}
+.fSize {
+	font-size: 35px;
+	color: white;
+}
+
+
+
+/* ------------------------ RESPONSIVENESS ------------------- */
+/* PHONE */
+@media (max-width: 720px ) and (orientation: portrait),
+(max-width: 900px) and (orientation: landscape) {
+	/* WIDGETS DISAPPEAR */
+	#infoSection { display: none; }
+}
+
+
+/* TABLET - PORTRAIT */
+@media (min-width: 700px) and (orientation: portrait) {
+	/* See definitions at top of css page */
+	.help_button > img { width: 80px; height: 80px; }
+}
+
+
+/* TABLET LANDSCAPE */
+@media (min-width: 900px) and (orientation: landscape) {
+	/* BUTTONS MENU SECTION */
+	.btnOA {
+		border-radius: 22px;
+		width: 240px;
+		height: 240px;
+	}
+	.svgSize { width: 160px; height: 160px; }
+	.fSize { font-size: 40px; }
+
+	/* NEWS WIDGET */
+	.uw-sc-mask {
+		width: auto;
+		height: 370px;
+	}
+
+	/* WEATHER WIDGET */
+	.eaw-root-layout-component {
+		height: 370px;
+	}
+
+	/* HELP BUTTON */
+	.help_button { top: 12vh;}
+	.help_button > img { width: 80px; height: 80px; }
+}
+
+/* LARGE SCREEN (laptop) */
+@media (min-width: 1100px) and (orientation: landscape) {
+	/* NEWS WIDGET */
+	.uw-sc-mask {
+		width: auto;
+		height: 266px;
+	}
+
+	/* WEATHER WIDGET */
+	.eaw-root-layout-component {
+		height: 266px;
+	}
+
+	/* HELP BUTTON */
+	.help_button { top: 16vh;}
+}
+
+.btn-cancel {
+	border-radius: 16px;
+	font-size: 22px!important;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2.3px;
+	padding: 10px 20px !important;
+	border: 0;
+	box-shadow: none !important;
+}
+
+.btn-close {
+	position: absolute;
+	left: 15px;
+}
+
+.btn-add {
+	background-color: #0288d1;
+	border-radius: 16px;
+	color: #fff;
+	font-size: 22px!important;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2.3px;
+	padding: 10px 20px !important;
+	border: 0;
+	box-shadow: none !important;
+}
+
+.btn-add:hover {
+	background-color: #02a3ef;
+	border-radius: 16px!important;
+	color: #fff;
+}
+
+.my-modal-content {
+	font-size: 22px!important;
+}
+
+.modal-title {
+	font-size: 22px!important;
+}

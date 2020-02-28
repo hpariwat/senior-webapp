@@ -1,0 +1,65 @@
+
+.login,
+.image {
+	min-height: 100vh;
+}
+
+.bg-image {
+	background-image: url('../../assets/img/Background_woods.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+#turn {
+	flex-wrap: wrap-reverse;
+}
+
+#button_login {
+	background-color: #0288D1;
+	border: none;
+}
+
+#button_login:hover{
+	background-color: #2274A5;
+}
+
+#button_register {
+	background-color: #C48460;
+	border: none;
+}
+
+#button_register:hover {
+	background-color: #ca9b6f;
+}
+
+.my-link a {
+	color: grey;
+}
+
+.forgot-password {
+	padding: 6px;
+}
+
+/* LOGIN BUTTON */
+.body {position: relative;}
+.btnLogin {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	background-color: #7a7a7a;
+	color: white;
+	border-radius: 22px;
+	font-size: 16px;
+}
+.btnLogin:hover{
+	background-color: #8a8a8a;
+	color: white;
+}
+
+.input-group > .input-group-prepend > .input-group-text {
+	border-radius: 2rem;
+}
+
+.nounderline {
+	text-decoration: none !important;
+}

@@ -1,0 +1,17 @@
+.my-link a {
+	color: grey;
+}
+
+.btn-register {
+	border-radius: 16px!important;
+	background-color: #0288D1!important;
+	border: none;
+}
+
+.btn-register:hover {
+	background-color: #2274A5!important;
+}
+.input-group > .input-group-prepend > .input-group-text {
+	border-radius: .25rem;
+}
+

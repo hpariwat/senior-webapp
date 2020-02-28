@@ -1,0 +1,98 @@
+body {
+	font-family: Raleway, sans-serif;
+	background-image: url("../img/home_CA_bg.svg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+.card-header {
+	border-top-left-radius: 16px!important;
+	border-top-right-radius: 16px!important;
+	font-weight: 600;
+	font-size: 18px;
+	background-color: #0288d1;
+	border: none;
+	color: #fff;
+}
+
+.card {
+	border-radius: 16px;
+	border: none;
+	transition: 0.3s;
+}
+
+.card:hover {
+	transform: scale(1.03);
+	box-shadow: 0 1rem 2rem rgba(0,0,0,.15)!important;
+}
+
+.fa-trash {
+	font-size: 21px!important;
+	color: #f1f1f1;
+}
+
+.card-add {
+	width: 90px!important;
+	height: 90px!important;
+	border-radius: 150px;
+	background-color: #0288D1;
+	display: inline-block
+}
+
+.my-add-col {
+	padding: 50px 0;
+	text-align: center;
+}
+
+.fa-plus-add {
+	padding-top:28px;
+}
+
+.btn-add-task {
+	background-color: #0288d1;
+	border-radius: 16px;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2.3px;
+	padding: 10px 20px !important;
+	border: 0;
+	box-shadow: none !important;
+}
+
+.btn-add-task:hover {
+	background-color: #02a3ef;
+	border-radius: 16px;
+	color: #fff;
+
+}
+
+.btn-cancel {
+	border-radius: 16px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2.3px;
+	padding: 10px 20px !important;
+	border: 0;
+	box-shadow: none !important;
+}
+
+.my-card {
+	position:relative;
+}
+.edit-b {
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+
+.btn {
+	outline: none;
+}
+.btn:focus,.btn:active {
+	outline: none !important;
+	box-shadow: none;
+}
+
+

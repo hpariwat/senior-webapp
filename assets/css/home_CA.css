@@ -1,0 +1,294 @@
+body {
+	background-image: url("../img/home_CA_bg.svg");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+html, body {
+	font-family: Raleway, sans-serif;
+}
+
+.card-header-command {
+	font-size: 31px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	color:#FFFFFF;
+	background-color: #1C344D;
+	border-top-left-radius: 22px!important;
+	border-top-right-radius: 22px!important;
+}
+
+.card-deck .card {
+	border-radius: 22px;
+
+}
+
+
+textarea {
+	resize: none;
+	height: 15vh!important;
+}
+
+.form-control[readonly] {
+	background-color:#FFF !important;
+}
+
+.card-header-todo {
+	font-size: 31px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	color:#FFFFFF;
+	background-color: #0288D1;
+	border-top-left-radius: 22px!important;
+	border-top-right-radius: 22px!important;
+}
+
+.right{
+	float:right;
+	padding-right: 2px;
+	font-size: small;
+	padding-top: 19px;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+.card {
+	margin-left: 10px!important;
+	margin-right: 10px!important;
+}
+
+.title {
+	text-align: center;
+ }
+
+.title h1 {
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.activities {
+	padding: 15px;
+	background-color: #0288D1;
+	color: white;
+}
+
+.card-text {
+	width: 100%;
+	white-space: normal;
+	overflow: hidden;
+}
+
+.card-body-todo {
+	height: 40vh;
+	overflow: auto;
+	background-color: #F7F7F7;
+	padding-left: 9px;
+	padding-right: 9px;
+}
+
+.card-body-command {
+	height: 40vh;
+	overflow: auto;
+	background-color: #F7F7F7;
+}
+.card-footer-todo {
+	background-color: #F7F7F7;
+	border-bottom-left-radius: 22px;
+	border-bottom-right-radius: 22px;
+}
+
+.card-list-todo {
+	font-size: 14px;
+	padding: 15px 10px 15px 15px;
+	width: 100%;
+
+	transition: all 0.1s ease 0s;
+	overflow: hidden;
+}
+
+.card-list-todo:hover {
+	background-color: #f4f1e7;
+	color: #1C344D;
+	border-radius: 12px!important;
+}
+
+.card-content-todo {
+	border-radius: 12px!important;
+}
+
+.card-big {
+	border: none;
+}
+
+.btn-round-add {
+	background-color: #0288D1;
+	width: 44px;
+	height: 44px;
+	border-radius: 22px;
+	color: #f1f1f1;
+	margin-right: 8px;
+	margin-bottom: 12px;
+}
+
+.btn-round-add:hover {
+	background-color: #029bed;
+	color: #f1f1f1;
+}
+
+.btn-round-done {
+	background-color: #c69478;
+	width: 44px;
+	height: 44px;
+	border-radius: 22px;
+	color: #fff;
+	margin-left: 8px;
+	margin-bottom: 17px;
+}
+
+.btn-round-done:hover {
+	background-color: #daa185;
+	color: #f1f1f1;
+}
+
+.btn-round-mic {
+	background-color: #0288D1;
+	width: 44px;
+	height: 44px;
+	border-radius: 22px;
+	color: #f1f1f1;
+	margin-left: 8px;
+	margin-bottom: 17px;
+}
+
+.btn-round-mic:hover {
+	background-color: #029bed;
+	color: #f1f1f1;
+}
+
+.btn-add-deadline {
+}
+
+.btn-add-task {
+	background-color: #0288d1;
+	border-radius: 16px;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2.3px;
+	padding: 10px 20px !important;
+	border: 0;
+	box-shadow: none !important;
+}
+
+.btn-add-task:hover {
+	background-color: #02a3ef;
+	border-radius: 16px;
+	color: #fff;
+
+}
+
+
+.my-view {
+	height: 90vh;
+}
+
+.fa-check-square {
+	transition: all 0.1s ease 0s;
+}
+
+.fa-check-square:hover {
+	transform: scale(1.4);
+	cursor: pointer;
+}
+
+@keyframes shadow-pulse
+{
+	0% {
+		box-shadow: 0 0 0 0 #dc3545;
+	}
+	100% {
+		box-shadow: 0 0 0 22px rgba(0, 0, 0, 0);
+	}
+}
+
+.micro-active {
+	animation: shadow-pulse 1s infinite;
+	background-color: #dc3545;
+}
+
+.micro-active:hover {
+	background-color: #dc3545;
+}
+
+.micro-around:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border: 2px solid #dc3545;
+	border-radius: 22px;
+	pointer-events: none /* allow click through*/
+}
+
+.btn-cancel {
+	border-radius: 16px;
+	/*padding: 12px;*/
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2.3px;
+	padding: 10px 20px !important;
+	border: 0;
+	box-shadow: none !important;
+}
+
+.btn-check {
+	transition: .1s;
+	float:right;
+	border: 1.2px solid #dddddd;
+	background-color: #fff;
+	border-radius: 8px;
+	color: #0288D1;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.btn-check:hover {
+	box-shadow: 0 0 7px rgba(33,33,33,.2);
+	transform: scale(1.1);
+}
+
+.btn-cancel {
+	border-radius: 16px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2.3px;
+	padding: 10px 20px !important;
+	border: 0;
+	box-shadow: none !important;
+}
+
+.btn-yes {
+	background-color: #0288d1;
+	border-radius: 16px;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2.3px;
+	padding: 10px 20px !important;
+	border: 0;
+	box-shadow: none !important;
+}
+
+.btn-yes:hover {
+	background-color: #02a3ef;
+	border-radius: 16px;
+	color: #fff;
+
+}

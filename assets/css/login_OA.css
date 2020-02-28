@@ -1,0 +1,199 @@
+body, html, .view {
+	font-family: 'Raleway', sans-serif;
+}
+
+:root {
+	--input-padding-x: 1.5rem;
+	--input-padding-y: .75rem;
+}
+
+/* HELP BUTTON */
+body { position: relative;}
+.help_button {
+	position: absolute;
+	right: 0;
+	top: 48px;
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	border: none;
+	cursor:pointer;
+	overflow: hidden;
+	outline:none;
+}
+.help_button:active{ border: none; }
+.help_button > img { width: 40px; height: 40px; }
+
+
+/* BACKGROUND IMAGE BLURRED */
+.view::before {
+
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	height: 100%;
+
+	background-image: url('../../assets/img/Background_woods.jpg');
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	transform: scale(1.1);
+	filter: blur(15px);
+	-webkit-filter: blur(15px);
+	-moz-filter: blur(15px);
+	-o-filter: blur(15px);
+	-ms-filter: blur(15px);
+}
+
+/* LOGIN BUTTON */
+.btnLogin {
+	background-color: #0288D1;
+	color: white;
+	border-radius: 22px;
+	font-size: 180%;
+}
+.btnLogin:hover{
+	background-color: #2274A5;
+	color: white;
+}
+
+.btn-brown {
+	background-color: #7a7a7a;
+	font-size: 16px;
+}
+
+.btn-brown:hover {
+	background-color: #8a8a8a;
+}
+
+/* LOGIN CARD WITH INPUT FIELDS */
+.card {
+	border: 1px solid #4A6163;
+	border-radius: 22px;
+	width: 70vw;
+}
+
+@media (orientation: landscape) { .card{width: 50vw;} }
+@media (min-width: 700px) and (orientation: portrait) { .card{width:60vw;} .help_button > img { width: 80px; height: 80px; } }
+@media (min-width: 950px) and (orientation: landscape) { .card{width:50vw;} .help_button > img { width: 80px; height: 80px; }}
+@media (min-width: 1100px) and (orientation: landscape) { .card{width:30vw;} }
+
+
+.card-title {
+	font-weight: bold;
+	font-size: 250%;
+}
+
+.form-label-group {
+	position: relative;
+	margin-bottom: 1rem;
+}
+
+.form-label-group input {
+	height: auto;
+	border-radius: 22px;
+}
+
+/* GSM PORTRAIT */
+@media (max-width: 740px) and (orientation: portrait) {
+	.form-label-group input { height: 12vh; }
+}
+
+.form-label-group>input,
+.form-label-group>label {
+	padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.form-label-group > label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	margin-bottom: 0;
+	line-height: 1;
+	color: #495057;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+	transition: all .1s ease-in-out;
+
+	font-size: 1.5rem;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+	color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+	color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+	color: transparent;
+}
+
+.form-label-group input::placeholder {
+	color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+	padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+	padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown)~label {
+	padding-top: calc(var(--input-padding-y) / 3);
+	padding-bottom: calc(var(--input-padding-y) / 3);
+	font-size: 12px;
+	color: #777;
+}
+
+/* Fallback for Edge
+-------------------------------------------------- */
+
+@supports (-ms-ime-align: auto) {
+	.form-label-group>label {
+		display: none;
+	}
+	.form-label-group input::-ms-input-placeholder {
+		color: #777;
+	}
+}
+
+/* Fallback for IE
+-------------------------------------------------- */
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+	.form-label-group>label {
+		display: none;
+	}
+	.form-label-group input:-ms-input-placeholder {
+		color: #777;
+	}
+}
+
+
+/* REMOVE ARROWS FOR ROOM NUMBER INPUT FIELD */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+	-moz-appearance:textfield;
+}
+
+#user_pincode {
+	-webkit-text-security: disc;
+	-moz-webkit-text-security: disc;
+	-moz-text-security: disc;
+}

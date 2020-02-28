@@ -1,0 +1,155 @@
+/*------ BACKGROUND Picture---------- */
+.container-fluid::before {
+
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	height: 100%;
+
+	background-image: url('../../assets/img/Background_woods.jpg');
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	transform: scale(1.1);
+	filter: blur(15px);
+	-webkit-filter: blur(15px);
+	-moz-filter: blur(15px);
+	-o-filter: blur(15px);
+	-ms-filter: blur(15px);
+}
+
+/* HELP BUTTON */
+.helper { position: relative; }
+.help_button:active{ border: none; }
+.help_button > img { width: 80px; height: 80px; }
+.help_button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0;
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	border: none;
+	cursor:pointer;
+	overflow: hidden;
+	outline:none;
+}
+
+/* ------------- CARD-------------- */
+.bgBeige { background-color: lightgrey; }
+.rSize { width: 70vw; }
+.row > .col-12 > .card {
+	border-radius: 22px;
+	border: 1px solid #4A6163;
+}
+
+/* Cup icon */
+.card > .card-body > .row > img {
+	width: 25vw;
+	height: 25vw;
+}
+/* Text Congratulations */
+#congrats {
+	/*color: #ab8976;*/
+	font-size: 45px;
+	font-weight: bold;
+}
+/* Text Completed */
+#completed {
+	/*color: #ab8976;*/
+	font-size: 20px;
+	font-weight: bold;
+	align-self: center;
+}
+/* Button home */
+.btnDesign {
+	width: 235px;
+	height: 50px;
+	border: 1px solid #4A6163;
+	background-color: #594D46;
+	color: white;
+	border-radius: 22px;
+}
+.btnDesign:hover { background-color: #ab8976; }
+.btnDesign > span { font-size: 16px; }
+
+
+/* ------------------------ RESPONSIVENESS ------------------- */
+/* PHONE (portrait*/
+@media (max-width: 720px ) and (orientation: portrait) {
+	.help_button > img { width: 40px; height: 40px; }
+}
+
+/* TABLET - PORTRAIT */
+@media (min-width: 700px) and (orientation: portrait) {
+	/* CARDSIZE */
+	.rSize { width: 60vw; }
+
+	/* CUP ICON */
+	.card > .card-body > .row > img {
+		width: 15vw;
+		height: 15vw;
+	}
+
+	/* TEXT CONGRATS */
+	#congrats { font-size: 60px; }
+
+	/* TEXT COMPLETED */
+	#completed { font-size: 25px; }
+
+	/* BUTTON HOMEPAGE */
+	.btnDesign { width: 392px; height: 60px; }
+	.btnDesign >  span { font-size: 25px; }
+	.btnDesign > img { width: 35px; height: 35px;}
+
+	/* HELP BUTTON */
+	.help_button > img { width: 80px; height: 80px; }
+}
+
+/* TABLET LANDSCAPE */
+@media (min-width: 900px) and (orientation: landscape) {
+	/* CARDSIZE */
+	.rSize { width: 45vw; }
+
+	/* CUP ICON */
+	.card > .card-body > .row > img {
+		width: 10vw;
+		height: 10vw;
+	}
+
+	/* TEXT CONGRATS */
+	#congrats { font-size: 60px; }
+
+	/* TEXT COMPLETED */
+	#completed { font-size: 25px; }
+
+	/* BUTTON HOMEPAGE */
+	.btnDesign { width: 392px; height: 60px; }
+	.btnDesign >  span { font-size: 25px; }
+	.btnDesign > img { width: 35px; height: 35px;}
+}
+
+/* LARGE SCREEN (laptop) */
+@media (min-width: 1100px) and (orientation: landscape) {
+	/* CARDSIZE */
+	.rSize { width: 35vw; }
+
+	/* CUP ICON */
+	.card > .card-body > .row > img {
+		width: 10vw;
+		height: 10vw;
+	}
+
+	/* TEXT CONGRATS */
+	#congrats { font-size: 70px; }
+
+	/* TEXT COMPLETED */
+	#completed { font-size: 30px; }
+
+	/* HELP BUTTON */
+	.help_button > img { width: 120px; height: 120px; }
+}
