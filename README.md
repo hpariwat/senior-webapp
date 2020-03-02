@@ -1,5 +1,5 @@
 # Senior Care Web Application
-Made with CodeIgniter, jQuery, and Bootstrap.
+Made with CodeIgniter, jQuery, Bootstrap, MySQL, Apache
 
 ## Features
 * full-fledged calendar with FullCalendar
